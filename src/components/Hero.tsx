@@ -3,6 +3,8 @@ import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 import LottieAnimation from "./LottieAnimation";
 const Hero = () => {
+
+  const video = "https://player.cloudinary.com/embed/?cloud_name=dahjtbwi0&public_id=video_uakeax&profile=cld-looping"
   const containerRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   const [lottieData, setLottieData] = useState<any>(null);
@@ -116,13 +118,13 @@ const Hero = () => {
             <LottieAnimation animationPath={lottieData} className="w-full h-auto max-w-lg mx-auto" loop={true} autoplay={true} />
               </div> : <>
               <div className="absolute inset-0 bg-dark-900 rounded-2xl sm:rounded-3xl -z-10 shadow-xl"></div>
-              <div className="relative transition-all duration-500 ease-out overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl">
-                {/* <img ref={imageRef} src="/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png" alt="Atlas Robot" className="w-full h-auto object-cover transition-transform duration-500 ease-out"  */}
-                  <video
-                  src="/public/video.mp4"autoPlay muted loop playsInline
-                style={{transformStyle: 'preserve-3d'}} />
-                
+              {/* <div className="relative transition-all duration-500 ease-out overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl">
+                <CloudinaryVideoPlayer cloudName="dahjtbwi0" publicId="video_uakeax" />
+              </div> */}
+              <div className="relative aspect-video overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl">
+                <CloudinaryVideoPlayer cloudName="dahjtbwi0" publicId="video_uakeax" />
               </div>
+
               </>}
           </div>
         </div>
@@ -132,3 +134,25 @@ const Hero = () => {
     </section>;
 }; 
 export default Hero;
+
+
+
+
+const CloudinaryVideoPlayer = ({
+  cloudName,
+  publicId,
+  profile = "cld-looping",
+}) => {
+  const url = `https://player.cloudinary.com/embed/?cloud_name=${cloudName}&public_id=${publicId}&profile=${profile}&autoplay=true&loop=true&controls=false&muted=true`;
+
+  return (
+    <iframe
+      src={url}
+      className="absolute inset-0 w-full h-full"
+      allow="autoplay; fullscreen; encrypted-media"
+      allowFullScreen
+      style={{ border: "none" }}
+      title="Cloudinary Video"
+    ></iframe>
+  );
+};

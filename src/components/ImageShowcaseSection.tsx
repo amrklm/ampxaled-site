@@ -1,6 +1,4 @@
-
-import React from "react";
-
+import hero from "/public/new-hero.png"
 const ImageShowcaseSection = () => {
   return (
     <section className="w-full pt-0 pb-8 sm:pb-12 bg-white" id="showcase">
@@ -18,7 +16,7 @@ const ImageShowcaseSection = () => {
         <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-elegant mx-auto max-w-4xl animate-on-scroll">
           <div className="w-full">
             <img 
-              src="/public/new-hero.png" 
+            src={hero}
               alt="Advanced humanoid robot with orange and white design" 
               className="w-full h-auto object-cover"
             />
