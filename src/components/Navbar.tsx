@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+
+import NavLogo from "/public/nav-log.png"
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,7 +37,7 @@ const Navbar = () => {
         {/* Hero Image */}
         <a href="#" className="flex items-center space-x-2" onClick={e => { e.preventDefault();scrollToTop();}} aria-label="ampxaled">
           {/* old <img alt="ampxaled-logo" className="h-7 sm:h-8" src="/lovable-uploads/2a3dcfa4-20e1-4c74-9e3a-06e011631772.png" /></a> */}
-          <img alt="ampxaled-logo" className="h-7 sm:h-8" src="/public/nav-log.png" /></a>
+          <img alt="ampxaled-logo" className="h-7 sm:h-8" src={NavLogo} /></a>
 
         {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 bg-inherit text-white hover:text-orange" >
