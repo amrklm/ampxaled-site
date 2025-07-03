@@ -11,6 +11,10 @@ import Testimonials from "@/components/Testimonials";
 import Newsletter from "@/components/Newsletter";
 import MadeByHumans from "@/components/MadeByHumans";
 import Footer from "@/components/Footer";
+import Pricing from "@/components/Pricing";
+
+
+
 
 const Index = () => {
   // Initialize intersection observer to detect when elements enter viewport
@@ -68,8 +72,9 @@ const Index = () => {
         <DetailsSection />
         <ImageShowcaseSection />
         <Features />
+        <Pricing />
         <Testimonials />
-        <Newsletter />
+        {false && <Newsletter />}
         {false && <MadeByHumans />}
 
       </main>

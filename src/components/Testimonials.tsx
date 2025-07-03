@@ -10,27 +10,27 @@ interface TestimonialProps {
 }
 
 const testimonials: TestimonialProps[] = [{
-  content: "Atlas transformed our production line, handling repetitive tasks while our team focuses on innovation. 30% increase in output within three months.",
-  author: "Sarah Chen",
-  role: "VP of Operations, Axion Manufacturing",
+  content: "The 3D sales system completely transformed how we showcase our off-plan units. Clients are now excited instead of confused—sales jumped by 35% in two months!",
+  author: " Sarah M.",
+  role: "Sales Director at Nova Developments",
   gradient: "from-blue-700 via-indigo-800 to-purple-900",
   backgroundImage: "/background-section1.png"
 }, {
-  content: "Implementing Atlas in our fulfillment centers reduced workplace injuries by 40% while improving order accuracy. The learning capabilities are remarkable.",
-  author: "Michael Rodriguez",
-  role: "Director of Logistics, GlobalShip",
+  content: "It’s like giving our buyers a time machine. They can explore, customize, and fall in love with their future home—all before it's built.",
+  author: "Michael Rodriguez.",
+  role: "Marketing Manager at FutureHomes",
   gradient: "from-indigo-900 via-purple-800 to-orange-500",
   backgroundImage: "/background-section2.png"
 }, {
-  content: "Atlas adapted to our lab protocols faster than any system we've used. It's like having another researcher who never gets tired and maintains perfect precision.",
-  author: "Dr. Amara Patel",
-  role: "Lead Scientist, BioAdvance Research",
+  content: "Our agents finally have a tool that closes deals faster. The interactive model answers 90% of client questions before we even meet them.",
+  author: "Lina K.",
+  role: "Real Estate Consultant",
   gradient: "from-purple-800 via-pink-700 to-red-500",
   backgroundImage: "/background-section3.png"
 }, {
-  content: "As a mid-size business, we never thought advanced robotics would be accessible to us. Atlas changed that equation entirely with its versatility and ease of deployment.",
-  author: "Jason Lee",
-  role: "CEO, Innovative Solutions Inc.",
+  content: "No more static PDFs or guessing. The immersive walkthroughs help our international buyers feel confident—like they’re walking the property in person.",
+  author: "Omar A.",
+  role: "Project Developer at VistaBuild",
   gradient: "from-orange-600 via-red-500 to-purple-600",
   backgroundImage: "/background-section1.png"
 }];
