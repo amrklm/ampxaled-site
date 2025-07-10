@@ -88,12 +88,12 @@ const Index = () => {
           <Features />
         </Suspense>
 
-        <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
+        {/* <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
           <Testimonials />
-        </Suspense>
+        </Suspense> */}
         {/* <Imagallery/> */}
         {/* <Pricing /> */}
-        {/* <Testimonials /> */}
+        <Testimonials />
         {/*  <Newsletter /> */}
         {/*  <MadeByHumans /> */}
         {/* <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
