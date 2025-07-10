@@ -1,5 +1,5 @@
 
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import HumanoidSection from "@/components/HumanoidSection";
@@ -12,11 +12,11 @@ import Newsletter from "@/components/Newsletter";
 import MadeByHumans from "@/components/MadeByHumans";
 import Footer from "@/components/Footer";
 import Pricing from "@/components/Pricing";
-
-
-
+import Imagallery from "@/components/ImageGallery";
+import ImageKitDisplay from "@/components/ImageKitDisplay";
 
 const Index = () => {
+
   // Initialize intersection observer to detect when elements enter viewport
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -72,10 +72,12 @@ const Index = () => {
         <DetailsSection />
         <ImageShowcaseSection />
         <Features />
-        <Pricing />
+        {false &&  <Imagallery/>}
+        {false &&<Pricing />}
         <Testimonials />
         {false && <Newsletter />}
         {false && <MadeByHumans />}
+        <ImageKitDisplay/>
 
       </main>
       <Footer />
